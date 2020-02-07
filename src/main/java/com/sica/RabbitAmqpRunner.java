@@ -11,9 +11,9 @@ public class RabbitAmqpRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... arg) throws Exception {
-		int duration = 1000 * 60 * 10;
-		System.out.println("Ready ... running for " + duration + "ms");
-		Thread.sleep(duration);
-		ctx.close();
+//		int duration = 1000 * 60 * 10;
+//		System.out.println("Ready ... running for " + duration + "ms");
+//		Thread.sleep(duration);
+//		ctx.close();
 	}
 }

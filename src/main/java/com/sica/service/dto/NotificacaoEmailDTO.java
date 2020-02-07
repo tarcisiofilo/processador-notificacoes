@@ -2,7 +2,7 @@ package com.sica.service.dto;
 
 import java.io.Serializable;
 
-public class NotificacaoSmsWhatsappDTO implements Serializable {
+public class NotificacaoEmailDTO implements Serializable {
 
 	/**
 	 * 
@@ -13,13 +13,13 @@ public class NotificacaoSmsWhatsappDTO implements Serializable {
 
 	private String msg;
 
-	public NotificacaoSmsWhatsappDTO(String to, String msg) {
+	public NotificacaoEmailDTO(String to, String msg) {
 		super();
 		this.to = to;
 		this.msg = msg;
 	}
 
-	public NotificacaoSmsWhatsappDTO() {
+	public NotificacaoEmailDTO() {
 		super();
 	}
 
