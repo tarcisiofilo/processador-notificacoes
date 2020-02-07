@@ -1,1 +1,1 @@
-web: java -jar $JAVA_OPTS -jar target/processador-notificacoes-0.0.1-SNAPSHOT.jar
+worker: java -jar target/processador-notificacoes-0.0.1-SNAPSHOT.jar
