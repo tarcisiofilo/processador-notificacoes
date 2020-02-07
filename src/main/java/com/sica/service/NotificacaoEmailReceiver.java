@@ -20,7 +20,7 @@ public class NotificacaoEmailReceiver {
 	@RabbitHandler
 	public void receive(NotificacaoEmailDTO notificacaoEmail) throws IOException {
 		Email from = new Email("sica@test.com");
-		String subject = "Registro de Incidente";
+		String subject = "Registro de Incidente - TESTE";
 		Email to = new Email(notificacaoEmail.getTo());
 		Content content = new Content("text/plain", notificacaoEmail.getMsg());
 		Mail mail = new Mail(from, subject, to, content);
