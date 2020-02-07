@@ -24,7 +24,7 @@ public class NotificacaoEmailReceiver {
 		Email to = new Email(notificacaoEmail.getTo());
 		Content content = new Content("text/plain", notificacaoEmail.getMsg());
 		Mail mail = new Mail(from, subject, to, content);
-		SendGrid sg = new SendGrid("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");
+		SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
 		Request request = new Request();
 		request.setMethod(Method.POST);
 		request.setEndpoint("mail/send");
